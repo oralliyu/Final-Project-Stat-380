@@ -1,0 +1,86 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+
+```{r Front Matter, include=FALSE}
+
+rm(list = ls())
+
+# load packages
+library(readxl)
+library(readr)
+library(rvest)
+
+# scrape data
+page <- "https://www.childstats.gov/americaschildren/tables/phy8b.asp"
+xpath <- '/html/body/div/table'
+
+
+table_list <-
+  page %>%
+  read_html() %>%
+  html_nodes(xpath = xpath) %>%
+  html_table(fill = TRUE)
+
+
+injuryMortality <-
+  table_list[[1]]
+
+```
+
+## Cleaning Data
+
+```{r}
+
+head(injuryMortality)
+
+```
+
+The above table is not tidy in the sense that the first column contains all the variables; the year variable is spread throughout each row instead of just in one column; there are tables that need to be separated for convenience; and the first row has repeating information that is true for all the data and is therefore not necessary in the dataset itself.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
