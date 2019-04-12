@@ -48,43 +48,26 @@ mBnon - black non-hispanic males
 ```{r}
 
 totalRateAllRaces <-
-  injuryMortality[4:8, ]
-
-leadCauseAllRaces <-
-  injuryMortality[10:13, ]
+  injuryMortality[c((4:8), (10:13)), ]
 
 TRARMale <-
   injuryMortality[16:20, ]
 
 mWhite <-
-  injuryMortality[22:26, ]
+  injuryMortality[c((22:26) , (28:31)), ]
 
-leadMWhite <-
-  injuryMortality[28:31, ]
 
 mBnon <-
-  injuryMortality[33:37, ]
+  injuryMortality[c((33:37), (39:42)), ]
 
-leadMBnon <-
-  injuryMortality[39:42, ]
 
 mAsianPacific <-
-  injuryMortality[44:48, ]
+  injuryMortality[c((44:48), (50:53)), ]
 
-leadMAsianPacific <-
-  injuryMortality[50:53, ]
 
 mAPnon <-
-  injuryMortality[55:59, ]
+  injuryMortality[c((55:59), (61:64)), ]
 
-leadMAPnon <-
-  injuryMortality[61:64, ]
-
-mHispanic <-
-  injuryMortality[66:70, ]
-
-leadMHispanic <-
-  injuryMortality[]
 
 
 
