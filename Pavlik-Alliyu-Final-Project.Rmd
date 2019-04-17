@@ -68,9 +68,6 @@ mAsianPacific <-
 mAPnon <-
   injuryMortality[c((55:59), (61:64)), ]
 
-
-
-
 ```
 
 
