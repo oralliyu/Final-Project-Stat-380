@@ -38,7 +38,7 @@ head(injuryMortality)
 
 ```
 
-The above table is not tidy in the sense that the first column contains all the variables; the year variable is spread throughout each row instead of just in one column; there are tables that need to be separated for convenience; the first row has repeating information that is true for all the data and is therefore not necessary in the dataset itself.
+The above table is not tidy in the sense that the first column contains all the variables; the year variable is spread throughout each row instead of just in one column; there are tables that need to be separated for convenience; the first row has repeating information that is true for all the data and is therefore not necessary in the l itself.
 
 TRAR - total rate all races
 TRARM - total rate all races; male
@@ -74,6 +74,35 @@ mAPnon <-
 ```
 
 
+
+Outline 
+
+# Join
+
+* Join tables from two different sources 
+
+
+# Data Wrangling Portion
+
+* General purpose data wrangling
+    + Use when tidying data tables 
+* Use of spread and gather 
+* Use of regular expressions
+* User-defined functions
+* Loops and/or control flow 
+
+# Data Visualization
+
+* Visualization with layered data from distinct data structures
+* Visualization displaying 3 or more variables
+* Another visualization
+* Another visualization
+
+# Data Analysis
+
+* Statistical modeling/Supervised learning
+* Unsupervised learning
+* Analysis of text data 
 
 
 
