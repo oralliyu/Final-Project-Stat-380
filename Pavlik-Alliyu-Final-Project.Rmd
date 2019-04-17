@@ -5,70 +5,45 @@ output: html_notebook
 
 
 ```{r Front Matter, include=FALSE}
-
+# Clean up environment
 rm(list = ls())
 
-# load packages
-library(readxl)
+# Load packages
+library(tidyverse)
 library(readr)
-library(rvest)
-
-# scrape data
-page <- "https://www.childstats.gov/americaschildren/tables/phy8b.asp"
-xpath <- '/html/body/div/table'
-
-
-table_list <-
-  page %>%
-  read_html() %>%
-  html_nodes(xpath = xpath) %>%
-  html_table(fill = TRUE)
-
-
-injuryMortality <-
-  table_list[[1]]
 
 ```
+
+# Add Data Table One
+
+```{r}
+fed_data <- 
+  read_csv("dif source join.csv")
+
+ View(fed_data)
+
+```
+
+# Add Data Table Two
+
+```{r}
+NCANDS <- 
+  read_csv("Findings from NCANDS - Data Tables (updated with FY 2015).csv")
+
+View(NCANDS)
+
+```
+
+
 
 ## Cleaning Data
 
 ```{r}
 
-head(injuryMortality)
 
 ```
 
-The above table is not tidy in the sense that the first column contains all the variables; the year variable is spread throughout each row instead of just in one column; there are tables that need to be separated for convenience; the first row has repeating information that is true for all the data and is therefore not necessary in the l itself.
 
-TRAR - total rate all races
-TRARM - total rate all races; male
-mWhite - white males
-mBnon - black non-hispanic males
-
-```{r}
-
-totalRateAllRaces <-
-  injuryMortality[c((4:8), (10:13)), ]
-
-TRARMale <-
-  injuryMortality[16:20, ]
-
-mWhite <-
-  injuryMortality[c((22:26) , (28:31)), ]
-
-
-mBnon <-
-  injuryMortality[c((33:37), (39:42)), ]
-
-
-mAsianPacific <-
-  injuryMortality[c((44:48), (50:53)), ]
-
-
-mAPnon <-
-  injuryMortality[c((55:59), (61:64)), ]
-
-```
 
 
 
