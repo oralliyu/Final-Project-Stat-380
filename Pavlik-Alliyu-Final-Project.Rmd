@@ -20,7 +20,7 @@ library(readr)
 fed_data <- 
   read_csv("dif source join.csv")
 
- View(fed_data)
+ head(fed_data)
 
 ```
 
@@ -30,7 +30,7 @@ fed_data <-
 NCANDS <- 
   read_csv("Findings from NCANDS - Data Tables (updated with FY 2015).csv")
 
-View(NCANDS)
+head(NCANDS)
 
 ```
 
@@ -52,39 +52,79 @@ View(NCANDS)
 
 NCANDS <-
   NCANDS %>%
-  rename(Characteristic_Label = `Characteristic Label`) %>%
-  group_by(State)
-
+  rename(Characteristic = `Characteristic Label`)
 
 ```
+
 
 ```{r}
 
-NCANDS_subType <-
+fatality_sub_type <-
   NCANDS %>%
-  filter(Table == "Child Fatalities by Submission Type")
+  filter(Table == "Child Fatalities by Submission Type") %>%
+  spread(key = Measure, value = Value)
 
-NCANDS_Trend <-
-  NCANDS %>%
-  filter(Table == "Child Fatalities, Trend")
 
-NCANDS_Age <-
+fatality_trend <-
   NCANDS %>%
-  filter(Table == "Child Victims by Age")
+  filter(Table == "Child Fatalities, Trend") %>%
+  spread(key = Measure, value = Value)
+
+
+victim_age <-
+  NCANDS %>%
+  filter(Table == "Child Victims by Age") %>%
+  spread(key = Measure, value = Value)
+
+
+case_type <-
+  NCANDS %>%
+  filter(Table == "Children by Disposition") %>%
+  spread(key = Measure, value = Value)
+
+
+investigation <-
+  NCANDS %>%
+  filter(Table == "Children Who Received an Investigation or Alternative Response, Trend") %>%
+  spread(key = Measure, value = Value)
+
+
+mal_type <-
+  NCANDS %>%
+  filter(Table == "Maltreatment Types of Victims") %>%
+  spread(key = Measure, value = Value)
+
+
+perpetrator_tally <-
+  NCANDS %>%
+  filter(Table == "Perpetrators by Relationship to their Victims") %>%
+  spread(key = Measure, value = Value)
+
+
+perpetrator_total <-
+  NCANDS %>%
+  filter(Table == "Perpetrators, Trend") %>%
+  spread(key = Measure, value = Value)
+
+
+referral_Type <-
+  NCANDS %>%
+  filter(Table == "Screened-In and Screened-Out Referrals") %>%
+  spread(key = Measure, value = Value)
 
 ```
-55
-36
-56
- 
-mWhite <-
-57
- 
-  injuryMortality[c((22:26) , (28:31)), ]
-58
-37
 
-```
+
+
+
+
+
+
+
+
+
+
+
 
 
 
