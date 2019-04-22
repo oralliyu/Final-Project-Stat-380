@@ -38,11 +38,37 @@ head(NCANDS)
 
 ## Cleaning Federal Data
 
+
 ```{r}
+# Make totals seperate table from fed_data
+fed_totals <-
+  fed_data %>%
+  filter(`Measure 2` == "Total")
 
+```
 
+```{r}
+# Clean fed_totals
+fed_totals <- 
+  fed_totals %>%
+  rename(Measure_2 = 'Measure 2',  Measure_1 = 'Measure 1') %>%
+  spread(key = Format, value = Value) 
 
+```
 
+```{r}
+# Remove columns
+fed_totals <- 
+  fed_totals %>%
+  select(-'X7', -'Measure_1', -'Measure_2')
+
+```
+
+```{r}
+# Rename remaining variables
+fed_totals <- 
+  fed_totals %>%
+  rename(Num_Fatalities = 'Number')
 
 ```
 
