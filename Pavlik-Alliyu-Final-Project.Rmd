@@ -36,13 +36,55 @@ View(NCANDS)
 
 
 
-## Cleaning Data
+## Cleaning Federal Data
 
 ```{r}
 
 
+
+
+
 ```
 
+## Cleaning NCANDS Data
+
+```{r}
+
+NCANDS <-
+  NCANDS %>%
+  rename(Characteristic_Label = `Characteristic Label`) %>%
+  group_by(State)
+
+
+```
+
+```{r}
+
+NCANDS_subType <-
+  NCANDS %>%
+  filter(Table == "Child Fatalities by Submission Type")
+
+NCANDS_Trend <-
+  NCANDS %>%
+  filter(Table == "Child Fatalities, Trend")
+
+NCANDS_Age <-
+  NCANDS %>%
+  filter(Table == "Child Victims by Age")
+
+```
+55
+36
+56
+ 
+mWhite <-
+57
+ 
+  injuryMortality[c((22:26) , (28:31)), ]
+58
+37
+
+```
 
 
 
@@ -67,7 +109,7 @@ Outline
 
 * Visualization with layered data from distinct data structures
 * Visualization displaying 3 or more variables
-* Another visualization
+"* Another visualization
 * Another visualization
 
 # Data Analysis
