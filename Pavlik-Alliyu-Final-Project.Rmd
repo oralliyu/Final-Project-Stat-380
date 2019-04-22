@@ -1,4 +1,6 @@
 ---
+authors:  Funke Alliyu and Lauryn Pavlik
+due date: April 30th, 2019
 title: "R Notebook"
 output: html_notebook
 ---
@@ -38,6 +40,7 @@ head(NCANDS)
 
 ## Cleaning Federal Data
 
+### Making a totals table 
 
 ```{r}
 # Make totals seperate table from fed_data
@@ -68,9 +71,46 @@ fed_totals <-
 # Rename remaining variables
 fed_totals <- 
   fed_totals %>%
-  rename(Num_Fatalities = 'Number')
+  rename(Num_Fatalities = 'Number', Rate_per_100000 = 'Rate per 100,000 Children')
 
 ```
+
+### Cleaning original table
+
+```{r}
+# Rename and spread
+fed_data <- 
+  fed_data %>%
+  rename(Measure_2 = 'Measure 2',  Measure_1 = 'Measure 1') %>%
+  spread(key = Measure_2, value = Value) %>%
+  spread(key = Format, value = Total) %>%
+  select(-`Rate per 100,000 Children`, -`X7`)
+
+```
+
+```{r}
+# Remove rows (MAYBE WRITE LOOP)
+fed_data <- 
+  fed_data[-c(2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40,
+              42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78,
+              80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100), ]
+
+```
+
+```{r}
+# Finish cleaning
+```
+
+
+
+
+
+
+
+
+
+
+
 
 ## Cleaning NCANDS Data
 
@@ -139,18 +179,6 @@ referral_Type <-
   spread(key = Measure, value = Value)
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
