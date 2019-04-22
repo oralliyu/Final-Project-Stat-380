@@ -99,18 +99,17 @@ fed_data <-
 
 ```{r}
 # Finish cleaning
+fed_data[is.na(fed_data)] = 0
+
+fed_data <- 
+  fed_data %>%
+  rename(Num_agencyfile = `Reported in the Agency File`, 
+         Num_childfile = `Reported in the Child File`, 
+         Total = Number) %>%
+  select(-`Measure_1`)
+  
+  
 ```
-
-
-
-
-
-
-
-
-
-
-
 
 ## Cleaning NCANDS Data
 
