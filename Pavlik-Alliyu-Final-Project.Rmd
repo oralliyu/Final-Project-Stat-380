@@ -122,7 +122,6 @@ fed_data <-
 ## Cleaning NCANDS Data
 
 ```{r}
-
 NCANDS <-
   NCANDS %>%
   rename(Characteristic = `Characteristic Label`)
@@ -155,7 +154,9 @@ fatality_sub_type[is.na(fatality_sub_type)] = 0
 fatality_trend <-
   NCANDS %>%
   filter(Table == "Child Fatalities, Trend") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  spread(key = Year, value = `Child fatalities`) %>%
+  select(- Characteristic, - Format)
 
 ```
 
