@@ -391,22 +391,22 @@ All_data[is.na(All_data)] = 0
 
 ## Join
 
-* Join tables from two different sources 
+* Join tables from two different sources    :)
 
 
 ## Data Wrangling Portion
-* General purpose data wrangling 
+* General purpose data wrangling            :)
     + Use when tidying data tables 
-* Use of spread and gather 
-* Use of regular expressions
-* User-defined functions
-* Loops and/or control flow 
+* Use of spread and gather               Used spread, NOT gather
+* Use of regular expressions            Trying to look for article on abuse
+* User-defined functions     See if you can find a way to create a function to remove even rows
+* Loops and/or control flow       Use loop in function?
 
 ## Data Visualization
 
 * Visualization with layered data from distinct data structures
 * Visualization displaying 3 or more variables
-"* Another visualization
+* Another visualization
 * Another visualization
 
 ## Data Analysis
