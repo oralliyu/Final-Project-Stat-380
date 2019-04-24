@@ -250,8 +250,8 @@ $(document).ready(function () {
 <h1>Add Data Table One</h1>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmVkX2RhdGEgPC0gXG4gIHJlYWRfY3N2KFwiZGlmIHNvdXJjZSBqb2luLmNzdlwiKVxuYGBgIn0= -->
-<pre class="r"><code>fed_data &lt;- 
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmF3X2ZlZF9kYXRhIDwtIFxuICByZWFkX2NzdihcImRpZiBzb3VyY2Ugam9pbi5jc3ZcIilcbmBgYCJ9 -->
+<pre class="r"><code>raw_fed_data &lt;- 
   read_csv(&quot;dif source join.csv&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-output-begin eyJkYXRhIjoiTWlzc2luZyBjb2x1bW4gbmFtZXMgZmlsbGVkIGluOiAnWDcnIFs3XVBhcnNlZCB3aXRoIGNvbHVtbiBzcGVjaWZpY2F0aW9uOlxuY29scyhcbiAgU3RhdGUgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bSxcbiAgWWVhciA9IFx1MDAxYlszMm1jb2xfZG91YmxlKClcdTAwMWJbMzltLFxuICBgTWVhc3VyZSAxYCA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltLFxuICBgTWVhc3VyZSAyYCA9IFx1MDAxYlszMW1jb2xfY2hhcmFjdGVyKClcdTAwMWJbMzltLFxuICBGb3JtYXQgPSBcdTAwMWJbMzFtY29sX2NoYXJhY3RlcigpXHUwMDFiWzM5bSxcbiAgVmFsdWUgPSBcdTAwMWJbMzJtY29sX2RvdWJsZSgpXHUwMDFiWzM5bSxcbiAgWDcgPSBcdTAwMWJbMzNtY29sX2xvZ2ljYWwoKVx1MDAxYlszOW1cbilcbiJ9 -->
@@ -266,10 +266,10 @@ cols(
   X7 = [33mcol_logical()[39m
 )</code></pre>
 <!-- rnb-output-end -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIGhlYWQoZmVkX2RhdGEpXG5gYGAifQ== -->
-<pre class="r"><code> head(fed_data)</code></pre>
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIGhlYWQocmF3X2ZlZF9kYXRhKVxuYGBgIn0= -->
+<pre class="r"><code> head(raw_fed_data)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6NywibnJvdyI6Nn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJ0MVV6VW9ETVJCT3Q5M2RkcUZGOE9MUHdWd0VCVnUySW5nUlZCUnZlcWdpN1RIZGptM29ObHV6V2RTYlQrQXIrSHkrZ1hpd3p0WkUybENrZURRd3lYeXpYK2FQeWJiTzIvdEJPeUNFT0tUb0ZvbFRSTFhrNEZZZ0pWTEp6MGRDaXF1bytDZ3JLSjcrNEovR3JNdEc3Qy9RUTVnT2JVUklMVWNucnhnUzE3S25sZGZXMllESFBYckJGSXU1NHBEU25Vencrd3hvbEdSQzdmNEgybnpGR3kwWUoxSkJqM0pCMVFDb3ZzNWowSXhObTNIYUJ4RTl6VkxjbXdTakxRTExYNTVQeTd2S1JsMlFTNkQxRmxOQXh5QnBNd3ozd2pEOHJrQ0MrUFd5bVpjbW1Wc0dINysvdkcxM2p0Wk95dHBlL3FIa0ErODk0N1pJckFmZ0NqYUNWTmZtRytPMXdwUTFLSFdBbWR3cWw4RFNUQUp0Mm9aOWsvMUZJa2RNR1VlM0xNNk1JNmQ5YUFlUDhHbVk0TVlZOUhBd0duY1M4N0xvRlprOE5FeSsxZHhqWHRCa012bkE0OU1pKzhsWThVUWcxY25mdDJ0RktVakxzSktKM0hXdkhnMHlNYXdmaExxUkJkM1VxdGE5R2QzL2p1bE10Qy9YTkFGRW40dWY4Y0dmQTVoeHEyRU4weElhWThtRjZWT0ExclNoWnNZeWlKTFlXS2JGa2M4dnNRcDI0TTRFQUFBPSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6NywibnJvdyI6Nn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJ0MVV6VW9ETVJCT3Q5M2RkcUdpZVBIbllDNkNncFp0TDNvUWJGRjYwME1WcWNkME85cmdObHV6V2RTYlQrQXIrSHkrZ1hob25hMkp0RUdrZURRd3lYeXpYK2FQeVhaT3U0MmdHeEJDSEZKMGk4UXBvbHB5Y0N1UUVxbms1eU1oeFZWVWZKUmxGRTkvOEZzeDY3RWgrd3YwRUtaM05pSmtLVWZOVnd5SmE5SFR5bXZyWk1EalBtMHp4V0t1T0tSMEp4UDhQZ01hSlpsUXUvK0JObC94UmdkR2lWVFFwMXhRTlFDcXIvTVlOR1BUWnJSdVFVUlBzeFQzTXNGb1A0SEZMOCtuNVoxbnd4N0lCZEI2aHltZ0k1QzBIb1o3WVJoK1ZTQkIvSHJaekV1ZHpDMkRqOTlmM3Jhdmo5YWFaVzB2ZjFQeWdmZWVjZnRKckFmZ0NqYUVWTmZtRytPRndwUTFLRjBETTdsVnpvQ2xtUVJhdHcwTmszMDdrVU9taktNckZtZkdrZE05c0lOSCtEUk1jR01NK2pnWXRSdUplVm4waWt3ZWFpYmZhdTR4TDJneW1YemdNYmJJZmpKU1BCRklkZkwzN1ZwUkN0SXlyR1FpZDkzZmp3YVp1TnR2MUE5MUp3dTZxMVd0ZXpPNi94WFVtV2hucnVrQ2lGc3V2dWNIL3c1ZzVtMEppNWpXVUJ0SkxreWpBclNtTlRVemwwR1V4TVl5clk2TVB3RVF6WWROendRQUFBPT0ifQ== -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["State"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Measure 1"],"name":[3],"type":["chr"],"align":["left"]},{"label":["Measure 2"],"name":[4],"type":["chr"],"align":["left"]},{"label":["Format"],"name":[5],"type":["chr"],"align":["left"]},{"label":["Value"],"name":[6],"type":["dbl"],"align":["right"]},{"label":["X7"],"name":[7],"type":["lgl"],"align":["right"]}],"data":[{"1":"Alabama","2":"2014","3":"Child Fatalities (unique count)","4":"Reported in the Child File","5":"Number","6":"17.00000","7":"NA"},{"1":"Alabama","2":"2014","3":"Child Fatalities (unique count)","4":"Reported in the Agency File","5":"Number","6":"0.00000","7":"NA"},{"1":"Alabama","2":"2014","3":"Child Fatalities (unique count)","4":"Total","5":"Number","6":"17.00000","7":"NA"},{"1":"Alabama","2":"2014","3":"Child Fatalities (unique count)","4":"Total","5":"Rate per 100,000 Children","6":"1.53489","7":"NA"},{"1":"Alaska","2":"2014","3":"Child Fatalities (unique count)","4":"Reported in the Agency File","5":"Number","6":"3.00000","7":"NA"},{"1":"Alaska","2":"2014","3":"Child Fatalities (unique count)","4":"Total","5":"Number","6":"3.00000","7":"NA"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
@@ -302,7 +302,7 @@ cols(
 <!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaGVhZChOQ0FORFMpXG5gYGAifQ== -->
 <pre class="r"><code>head(NCANDS)</code></pre>
 <!-- rnb-source-end -->
-<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6NywibnJvdyI6Nn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJ0MVVRVS9iTUJSMjB5WVJrVUJJOUFRWFM5eWdyUUxpRGdqVUU5dWhJRlNPVHZLZ0Zva1QyWTVZcFIzNEovdFB1KzF2N0xnRDNVdUoyOGFncVpxMkM1WWN2Ky81OC9QM1hteVBMc2ZId1RnZ2hEaWs3YmFKMDBhejQrQ25SVHBrb3hxL0VOTGVRY1BIdm8zZHF5Zjg4NVJGTEdOL0F6MkU2dEZHaEd4VjZPemJWMUsxZFVkTDEvN0ZoS2NKSFRMTlVxNDVLQnBONlhVWlpWd3BuZ3Q2TXkzZ28xTGZyY1I5WTRsYUx0RnZvdjlqNnFGTjdWSEpOTkFDSkQwS3cxNFloalN1S0JMRWZ4TFNyTWp1Q0lwY2FrZ294L2tKMExxb1BEVkI5MnpHK1FPSWVMcEtjVzl5M1BFOXNQN2lwaXp2YzVsRklOZEFuUkhXNzQ4OGM0a09TS01aZlByelI5SWJmcjg4NjliK3JtRTBicjByV0FhcWx1a2I1N1ZlN3Q2NUF5WVhTYkZva2FIL0NaZ3FwWUhkaXdtVExOWWd1ZEk4cGxjc0FsTXZiNWpMakdrVDVaYWxKZGhDWW53YmpCRGpEQkw4NTRON2lSb3Qrb2JNbndaRysyYjFyRDNqWnphYi9jTGh4U0w3ZWFIeG9DRFZxUjQ0MTlxbEpTM0hkaW1xMEVrL25wVGlzWDl5VkVtWno3KzJ6ZHIyVm16L2RVOW5Wc2R5VGVvZ0hyaFluSXAwcFNwYm1NTThoVUVodVREVkNkQ3JCbnJsdEFWeG5oclBQRG55OGh1THY4cUF6d1VBQUE9PSJ9 -->
+<!-- rnb-frame-begin eyJtZXRhZGF0YSI6eyJjbGFzc2VzIjpbInRibF9kZiIsInRibCIsImRhdGEuZnJhbWUiXSwibmNvbCI6NywibnJvdyI6Nn0sInJkZiI6Ikg0c0lBQUFBQUFBQUJ0MVVRVS9iTUJRMmFaT0lTS0JONjJsY0xISGIyaXB3MjJrZ1VFK0RRMEdvSEoza2xWb2tUbVE3WXBWMjRKL3duN2p4TjNiY2dmSlM0dEo0RmFvbXVNeVM0L2M5ZjM3KzNvdnQ0ZkZvUHhnRmhCQ0h0TndXY1Zwb3RoMzhiSkEyMmF6R240UzBQcUhoWS8rQTNhc24vTU9VUlN4ai93STloT3JhUm9Sc1Yramc3aGVwMnJxanBXdjNhTUxUaEE2WVppblhIQlNOcHZTc2pES3VGTThGUFo4VzhMOVNWMVppM0ZpaVhwYm92NksvTWZXclRlMVN5VFRRQWlUZEM4TnVHSVkwcmlnU3hEc0phVmJrOHhDS1hHcElLTWY1Q2RDNnFEdzFRWGRzeHVFVmlIaTZUSEhQYzl4eEZWaC9jVk9XZDFwbUVjZzFVSHVJOVh1Vlp5N1JGOUpvQm4vLy9aQjBCL2ZIQjUzYTN6R014cTEzQmN0QTFUSjk0enpUTDd1M0w0SEpSVklzV21Ub253QlRwVFN3Y3pSaGtzVWFKRmVheC9RSGk4RFV5eHZrTW1QYVJMbGdhUW0ya0JqZkJpUEVPSU1FLzNsL0xGR2pSZCtVK1UzZmFOK3FuclZiL014bXN6ODRQRnBrUHk4MEhoU2tPdFVENTFxN2JFakw4YkVVVmVpa0YwOUtjZDNiMy90V2Faa1RudHRXYlh0THR2KzhxVE9yZzdrbWR4QlhYQ3lPUmJwVWxtMU1ZcDVEdjVCY21QSUU2RlY5dlhUY2dqaFBqV2VlSFhsOEF2T1Z0ajNRQlFBQSJ9 -->
 <div data-pagedtable="false">
 <script data-pagedtable-source type="application/json">
 {"columns":[{"label":["State"],"name":[1],"type":["chr"],"align":["left"]},{"label":["Year"],"name":[2],"type":["dbl"],"align":["right"]},{"label":["Table"],"name":[3],"type":["chr"],"align":["left"]},{"label":["Measure"],"name":[4],"type":["chr"],"align":["left"]},{"label":["Characteristic Label"],"name":[5],"type":["chr"],"align":["left"]},{"label":["Format"],"name":[6],"type":["chr"],"align":["left"]},{"label":["Value"],"name":[7],"type":["dbl"],"align":["right"]}],"data":[{"1":"Alabama","2":"2015","3":"Child Fatalities by Submission Type","4":"Child fatalities by submission type","5":"Reported in the Child File","6":"Number","7":"13.000000"},{"1":"Alabama","2":"2015","3":"Child Fatalities by Submission Type","4":"Child fatalities by submission type","5":"Reported in the Agency File","6":"Number","7":"0.000000"},{"1":"Alabama","2":"2015","3":"Child Fatalities by Submission Type","4":"Child fatalities by submission type","5":"Total","6":"Number","7":"13.000000"},{"1":"Alabama","2":"2015","3":"Child Fatalities by Submission Type","4":"Child fatalities, rate per 100,000 children","5":"Total","6":"Rate","7":"1.178074"},{"1":"Alaska","2":"2015","3":"Child Fatalities by Submission Type","4":"Child fatalities by submission type","5":"Reported in the Agency File","6":"Number","7":"5.000000"},{"1":"Alaska","2":"2015","3":"Child Fatalities by Submission Type","4":"Child fatalities by submission type","5":"Total","6":"Number","7":"5.000000"}],"options":{"columns":{"min":{},"max":[10],"total":[7]},"rows":{"min":[10],"max":[10],"total":[6]},"pages":{}}}
@@ -317,10 +317,10 @@ cols(
 <h3>Making a totals table</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBNYWtlIHRvdGFscyBzZXBlcmF0ZSB0YWJsZSBmcm9tIGZlZF9kYXRhXG5mZWRfdG90YWxzIDwtXG4gIGZlZF9kYXRhICU+JVxuICBmaWx0ZXIoYE1lYXN1cmUgMmAgPT0gXCJUb3RhbFwiKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBNYWtlIHRvdGFscyBzZXBlcmF0ZSB0YWJsZSBmcm9tIGZlZF9kYXRhXG5mZWRfdG90YWxzIDwtXG4gIHJhd19mZWRfZGF0YSAlPiVcbiAgZmlsdGVyKGBNZWFzdXJlIDJgID09IFwiVG90YWxcIilcbmBgYCJ9 -->
 <pre class="r"><code># Make totals seperate table from fed_data
 fed_totals &lt;-
-  fed_data %&gt;%
+  raw_fed_data %&gt;%
   filter(`Measure 2` == &quot;Total&quot;)</code></pre>
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
@@ -361,10 +361,10 @@ fed_totals &lt;-
 <h3>Cleaning original table</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBSZW5hbWUgYW5kIHNwcmVhZFxuZmVkX2RhdGEgPC0gXG4gIGZlZF9kYXRhICU+JVxuICByZW5hbWUoTWVhc3VyZV8yID0gJ01lYXN1cmUgMicsICBNZWFzdXJlXzEgPSAnTWVhc3VyZSAxJykgJT4lXG4gIHNwcmVhZChrZXkgPSBNZWFzdXJlXzIsIHZhbHVlID0gVmFsdWUpICU+JVxuICBzcHJlYWQoa2V5ID0gRm9ybWF0LCB2YWx1ZSA9IFRvdGFsKSAlPiVcbiAgc2VsZWN0KC1gUmF0ZSBwZXIgMTAwLDAwMCBDaGlsZHJlbmAsIC1gWDdgKVxuYGBgIn0= -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuIyBSZW5hbWUgYW5kIHNwcmVhZFxuZmVkX2RhdGEgPC0gXG4gIHJhd19mZWRfZGF0YSAlPiVcbiAgcmVuYW1lKE1lYXN1cmVfMiA9ICdNZWFzdXJlIDInLCAgTWVhc3VyZV8xID0gJ01lYXN1cmUgMScpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZV8yLCB2YWx1ZSA9IFZhbHVlKSAlPiVcbiAgc3ByZWFkKGtleSA9IEZvcm1hdCwgdmFsdWUgPSBUb3RhbCkgJT4lXG4gIHNlbGVjdCgtYFJhdGUgcGVyIDEwMCwwMDAgQ2hpbGRyZW5gLCAtYFg3YClcbmBgYCJ9 -->
 <pre class="r"><code># Rename and spread
 fed_data &lt;- 
-  fed_data %&gt;%
+  raw_fed_data %&gt;%
   rename(Measure_2 = 'Measure 2',  Measure_1 = 'Measure 1') %&gt;%
   spread(key = Measure_2, value = Value) %&gt;%
   spread(key = Format, value = Total) %&gt;%
@@ -412,42 +412,124 @@ fed_data &lt;-
 <!-- rnb-source-end -->
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
+<div id="make-fatality_sub_type" class="section level3">
+<h3>Make fatality_sub_type</h3>
 <!-- rnb-text-end -->
 <!-- rnb-chunk-begin -->
-<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmF0YWxpdHlfc3ViX3R5cGUgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJDaGlsZCBGYXRhbGl0aWVzIGJ5IFN1Ym1pc3Npb24gVHlwZVwiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5mYXRhbGl0eV90cmVuZCA8LVxuICBOQ0FORFMgJT4lXG4gIGZpbHRlcihUYWJsZSA9PSBcIkNoaWxkIEZhdGFsaXRpZXMsIFRyZW5kXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSlcbnZpY3RpbV9hZ2UgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJDaGlsZCBWaWN0aW1zIGJ5IEFnZVwiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5jYXNlX3R5cGUgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJDaGlsZHJlbiBieSBEaXNwb3NpdGlvblwiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5pbnZlc3RpZ2F0aW9uIDwtXG4gIE5DQU5EUyAlPiVcbiAgZmlsdGVyKFRhYmxlID09IFwiQ2hpbGRyZW4gV2hvIFJlY2VpdmVkIGFuIEludmVzdGlnYXRpb24gb3IgQWx0ZXJuYXRpdmUgUmVzcG9uc2UsIFRyZW5kXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSlcbm1hbF90eXBlIDwtXG4gIE5DQU5EUyAlPiVcbiAgZmlsdGVyKFRhYmxlID09IFwiTWFsdHJlYXRtZW50IFR5cGVzIG9mIFZpY3RpbXNcIikgJT4lXG4gIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKVxucGVycGV0cmF0b3JfdGFsbHkgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJQZXJwZXRyYXRvcnMgYnkgUmVsYXRpb25zaGlwIHRvIHRoZWlyIFZpY3RpbXNcIikgJT4lXG4gIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKVxucGVycGV0cmF0b3JfdG90YWwgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJQZXJwZXRyYXRvcnMsIFRyZW5kXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSlcbnJlZmVycmFsX1R5cGUgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJTY3JlZW5lZC1JbiBhbmQgU2NyZWVuZWQtT3V0IFJlZmVycmFsc1wiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5gYGAifQ== -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmF0YWxpdHlfc3ViX3R5cGUgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJDaGlsZCBGYXRhbGl0aWVzIGJ5IFN1Ym1pc3Npb24gVHlwZVwiKSAlPiVcbiAgc2VsZWN0KC0gXCJNZWFzdXJlXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gQ2hhcmFjdGVyaXN0aWMsIHZhbHVlID0gVmFsdWUpICU+JVxuICBzcHJlYWQoa2V5ID0gRm9ybWF0LCB2YWx1ZSA9IFRvdGFsKSAlPiVcbiAgc2VsZWN0KC0gUmF0ZSlcbmZhdGFsaXR5X3N1Yl90eXBlIDwtIFxuICBmYXRhbGl0eV9zdWJfdHlwZVstYygyLCA0LCA2LCA4LCAxMCwgMTIsIDE0LCAxNiwgMTgsIDIwLCAyMiwgMjQsIDI2LCAyOCwgMzAsIDMyLCAzNCwgMzYsIDM4LCA0MCxcbiAgICAgICAgICAgICAgNDIsIDQ0LCA0NiwgNDgsIDUwLCA1MiwgNTQsIDU2LCA1OCwgNjAsIDYyLCA2NCwgNjYsIDY4LCA3MCwgNzIsIDc0LCA3NiwgNzgsXG4gICAgICAgICAgICAgIDgwLCA4MiwgODQsIDg2LCA4OCwgOTAsIDkyLCA5NCwgOTYsIDk4LCAxMDApLCBdXG5mYXRhbGl0eV9zdWJfdHlwZVtpcy5uYShmYXRhbGl0eV9zdWJfdHlwZSldID0gMFxuYGBgIn0= -->
 <pre class="r"><code>fatality_sub_type &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Child Fatalities by Submission Type&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-fatality_trend &lt;-
+  select(- &quot;Measure&quot;) %&gt;%
+  spread(key = Characteristic, value = Value) %&gt;%
+  spread(key = Format, value = Total) %&gt;%
+  select(- Rate)
+fatality_sub_type &lt;- 
+  fatality_sub_type[-c(2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40,
+              42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64, 66, 68, 70, 72, 74, 76, 78,
+              80, 82, 84, 86, 88, 90, 92, 94, 96, 98, 100), ]
+fatality_sub_type[is.na(fatality_sub_type)] = 0</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-fatality_trend" class="section level3">
+<h3>Make fatality_trend</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuZmF0YWxpdHlfdHJlbmQgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJDaGlsZCBGYXRhbGl0aWVzLCBUcmVuZFwiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5gYGAifQ== -->
+<pre class="r"><code>fatality_trend &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Child Fatalities, Trend&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-victim_age &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-victim_age" class="section level3">
+<h3>Make victim_age</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxudmljdGltX2FnZSA8LVxuICBOQ0FORFMgJT4lXG4gIGZpbHRlcihUYWJsZSA9PSBcIkNoaWxkIFZpY3RpbXMgYnkgQWdlXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSlcbmBgYCJ9 -->
+<pre class="r"><code>victim_age &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Child Victims by Age&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-case_type &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-case_type" class="section level3">
+<h3>Make case_type</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuY2FzZV90eXBlIDwtXG4gIE5DQU5EUyAlPiVcbiAgZmlsdGVyKFRhYmxlID09IFwiQ2hpbGRyZW4gYnkgRGlzcG9zaXRpb25cIikgJT4lXG4gIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKVxuYGBgIn0= -->
+<pre class="r"><code>case_type &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Children by Disposition&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-investigation &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-investigation" class="section level3">
+<h3>Make investigation</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxuaW52ZXN0aWdhdGlvbiA8LVxuICBOQ0FORFMgJT4lXG4gIGZpbHRlcihUYWJsZSA9PSBcIkNoaWxkcmVuIFdobyBSZWNlaXZlZCBhbiBJbnZlc3RpZ2F0aW9uIG9yIEFsdGVybmF0aXZlIFJlc3BvbnNlLCBUcmVuZFwiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5gYGAifQ== -->
+<pre class="r"><code>investigation &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Children Who Received an Investigation or Alternative Response, Trend&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-mal_type &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-mal_type" class="section level3">
+<h3>Make mal_type</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxubWFsX3R5cGUgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJNYWx0cmVhdG1lbnQgVHlwZXMgb2YgVmljdGltc1wiKSAlPiVcbiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpXG5gYGAifQ== -->
+<pre class="r"><code>mal_type &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Maltreatment Types of Victims&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-perpetrator_tally &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-perpetrator_tally" class="section level3">
+<h3>Make perpetrator_tally</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGVycGV0cmF0b3JfdGFsbHkgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJQZXJwZXRyYXRvcnMgYnkgUmVsYXRpb25zaGlwIHRvIHRoZWlyIFZpY3RpbXNcIikgJT4lXG4gIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKVxuYGBgIn0= -->
+<pre class="r"><code>perpetrator_tally &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Perpetrators by Relationship to their Victims&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-perpetrator_total &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-perpetrator_total" class="section level3">
+<h3>Make perpetrator_total</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucGVycGV0cmF0b3JfdG90YWwgPC1cbiAgTkNBTkRTICU+JVxuICBmaWx0ZXIoVGFibGUgPT0gXCJQZXJwZXRyYXRvcnMsIFRyZW5kXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSlcbmBgYCJ9 -->
+<pre class="r"><code>perpetrator_total &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Perpetrators, Trend&quot;) %&gt;%
-  spread(key = Measure, value = Value)
-referral_Type &lt;-
+  spread(key = Measure, value = Value)</code></pre>
+<!-- rnb-source-end -->
+<!-- rnb-chunk-end -->
+<!-- rnb-text-begin -->
+</div>
+<div id="make-referral_type" class="section level3">
+<h3>Make referral_type</h3>
+<!-- rnb-text-end -->
+<!-- rnb-chunk-begin -->
+<!-- rnb-source-begin eyJkYXRhIjoiYGBgclxucmVmZXJyYWxfdHlwZSA8LVxuICBOQ0FORFMgJT4lXG4gIGZpbHRlcihUYWJsZSA9PSBcIlNjcmVlbmVkLUluIGFuZCBTY3JlZW5lZC1PdXQgUmVmZXJyYWxzXCIpICU+JVxuICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSlcbmBgYCJ9 -->
+<pre class="r"><code>referral_type &lt;-
   NCANDS %&gt;%
   filter(Table == &quot;Screened-In and Screened-Out Referrals&quot;) %&gt;%
   spread(key = Measure, value = Value)</code></pre>
@@ -455,6 +537,7 @@ referral_Type &lt;-
 <!-- rnb-chunk-end -->
 <!-- rnb-text-begin -->
 <p>Outline</p>
+</div>
 </div>
 </div>
 <div id="join" class="section level1">
@@ -494,7 +577,7 @@ referral_Type &lt;-
 <!-- rnb-text-end -->
 </div>
 
-<div id="rmd-source-code">LS0tDQphdXRob3JzOiAgRnVua2UgQWxsaXl1IGFuZCBMYXVyeW4gUGF2bGlrDQpkdWUgZGF0ZTogQXByaWwgMzB0aCwgMjAxOQ0KdGl0bGU6ICJSIE5vdGVib29rIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KDQpgYGB7ciBGcm9udCBNYXR0ZXIsIGluY2x1ZGU9RkFMU0V9DQojIENsZWFuIHVwIGVudmlyb25tZW50DQpybShsaXN0ID0gbHMoKSkNCg0KIyBMb2FkIHBhY2thZ2VzDQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmxpYnJhcnkocmVhZHIpDQoNCmBgYA0KDQojIEFkZCBEYXRhIFRhYmxlIE9uZQ0KDQpgYGB7cn0NCmZlZF9kYXRhIDwtIA0KICByZWFkX2NzdigiZGlmIHNvdXJjZSBqb2luLmNzdiIpDQoNCiBoZWFkKGZlZF9kYXRhKQ0KDQpgYGANCg0KIyBBZGQgRGF0YSBUYWJsZSBUd28NCg0KYGBge3J9DQpOQ0FORFMgPC0gDQogIHJlYWRfY3N2KCJGaW5kaW5ncyBmcm9tIE5DQU5EUyAtIERhdGEgVGFibGVzICh1cGRhdGVkIHdpdGggRlkgMjAxNSkuY3N2IikNCg0KaGVhZChOQ0FORFMpDQoNCmBgYA0KDQoNCg0KIyMgQ2xlYW5pbmcgRmVkZXJhbCBEYXRhDQoNCiMjIyBNYWtpbmcgYSB0b3RhbHMgdGFibGUgDQoNCmBgYHtyfQ0KIyBNYWtlIHRvdGFscyBzZXBlcmF0ZSB0YWJsZSBmcm9tIGZlZF9kYXRhDQpmZWRfdG90YWxzIDwtDQogIGZlZF9kYXRhICU+JQ0KICBmaWx0ZXIoYE1lYXN1cmUgMmAgPT0gIlRvdGFsIikNCg0KYGBgDQoNCmBgYHtyfQ0KIyBDbGVhbiBmZWRfdG90YWxzDQpmZWRfdG90YWxzIDwtIA0KICBmZWRfdG90YWxzICU+JQ0KICByZW5hbWUoTWVhc3VyZV8yID0gJ01lYXN1cmUgMicsICBNZWFzdXJlXzEgPSAnTWVhc3VyZSAxJykgJT4lDQogIHNwcmVhZChrZXkgPSBGb3JtYXQsIHZhbHVlID0gVmFsdWUpIA0KDQpgYGANCg0KYGBge3J9DQojIFJlbW92ZSBjb2x1bW5zDQpmZWRfdG90YWxzIDwtIA0KICBmZWRfdG90YWxzICU+JQ0KICBzZWxlY3QoLSdYNycsIC0nTWVhc3VyZV8xJywgLSdNZWFzdXJlXzInKQ0KDQpgYGANCg0KYGBge3J9DQojIFJlbmFtZSByZW1haW5pbmcgdmFyaWFibGVzDQpmZWRfdG90YWxzIDwtIA0KICBmZWRfdG90YWxzICU+JQ0KICByZW5hbWUoTnVtX0ZhdGFsaXRpZXMgPSAnTnVtYmVyJywgUmF0ZV9wZXJfMTAwMDAwID0gJ1JhdGUgcGVyIDEwMCwwMDAgQ2hpbGRyZW4nKQ0KDQpgYGANCg0KIyMjIENsZWFuaW5nIG9yaWdpbmFsIHRhYmxlDQoNCmBgYHtyfQ0KIyBSZW5hbWUgYW5kIHNwcmVhZA0KZmVkX2RhdGEgPC0gDQogIGZlZF9kYXRhICU+JQ0KICByZW5hbWUoTWVhc3VyZV8yID0gJ01lYXN1cmUgMicsICBNZWFzdXJlXzEgPSAnTWVhc3VyZSAxJykgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlXzIsIHZhbHVlID0gVmFsdWUpICU+JQ0KICBzcHJlYWQoa2V5ID0gRm9ybWF0LCB2YWx1ZSA9IFRvdGFsKSAlPiUNCiAgc2VsZWN0KC1gUmF0ZSBwZXIgMTAwLDAwMCBDaGlsZHJlbmAsIC1gWDdgKQ0KDQpgYGANCg0KYGBge3J9DQojIFJlbW92ZSByb3dzIChNQVlCRSBXUklURSBMT09QKQ0KZmVkX2RhdGEgPC0gDQogIGZlZF9kYXRhWy1jKDIsIDQsIDYsIDgsIDEwLCAxMiwgMTQsIDE2LCAxOCwgMjAsIDIyLCAyNCwgMjYsIDI4LCAzMCwgMzIsIDM0LCAzNiwgMzgsIDQwLA0KICAgICAgICAgICAgICA0MiwgNDQsIDQ2LCA0OCwgNTAsIDUyLCA1NCwgNTYsIDU4LCA2MCwgNjIsIDY0LCA2NiwgNjgsIDcwLCA3MiwgNzQsIDc2LCA3OCwNCiAgICAgICAgICAgICAgODAsIDgyLCA4NCwgODYsIDg4LCA5MCwgOTIsIDk0LCA5NiwgOTgsIDEwMCksIF0NCg0KYGBgDQoNCmBgYHtyfQ0KIyBGaW5pc2ggY2xlYW5pbmcNCmZlZF9kYXRhW2lzLm5hKGZlZF9kYXRhKV0gPSAwDQoNCmZlZF9kYXRhIDwtIA0KICBmZWRfZGF0YSAlPiUNCiAgcmVuYW1lKE51bV9hZ2VuY3lmaWxlID0gYFJlcG9ydGVkIGluIHRoZSBBZ2VuY3kgRmlsZWAsIA0KICAgICAgICAgTnVtX2NoaWxkZmlsZSA9IGBSZXBvcnRlZCBpbiB0aGUgQ2hpbGQgRmlsZWAsIA0KICAgICAgICAgVG90YWwgPSBOdW1iZXIpICU+JQ0KICBzZWxlY3QoLWBNZWFzdXJlXzFgKQ0KICANCiAgDQpgYGANCg0KIyMgQ2xlYW5pbmcgTkNBTkRTIERhdGENCg0KYGBge3J9DQoNCk5DQU5EUyA8LQ0KICBOQ0FORFMgJT4lDQogIHJlbmFtZShDaGFyYWN0ZXJpc3RpYyA9IGBDaGFyYWN0ZXJpc3RpYyBMYWJlbGApDQoNCmBgYA0KDQoNCmBgYHtyfQ0KDQpmYXRhbGl0eV9zdWJfdHlwZSA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiQ2hpbGQgRmF0YWxpdGllcyBieSBTdWJtaXNzaW9uIFR5cGUiKSAlPiUNCiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpDQoNCg0KZmF0YWxpdHlfdHJlbmQgPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIkNoaWxkIEZhdGFsaXRpZXMsIFRyZW5kIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQoNCnZpY3RpbV9hZ2UgPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIkNoaWxkIFZpY3RpbXMgYnkgQWdlIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQoNCmNhc2VfdHlwZSA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiQ2hpbGRyZW4gYnkgRGlzcG9zaXRpb24iKSAlPiUNCiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpDQoNCg0KaW52ZXN0aWdhdGlvbiA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiQ2hpbGRyZW4gV2hvIFJlY2VpdmVkIGFuIEludmVzdGlnYXRpb24gb3IgQWx0ZXJuYXRpdmUgUmVzcG9uc2UsIFRyZW5kIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQoNCm1hbF90eXBlIDwtDQogIE5DQU5EUyAlPiUNCiAgZmlsdGVyKFRhYmxlID09ICJNYWx0cmVhdG1lbnQgVHlwZXMgb2YgVmljdGltcyIpICU+JQ0KICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSkNCg0KDQpwZXJwZXRyYXRvcl90YWxseSA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiUGVycGV0cmF0b3JzIGJ5IFJlbGF0aW9uc2hpcCB0byB0aGVpciBWaWN0aW1zIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQoNCnBlcnBldHJhdG9yX3RvdGFsIDwtDQogIE5DQU5EUyAlPiUNCiAgZmlsdGVyKFRhYmxlID09ICJQZXJwZXRyYXRvcnMsIFRyZW5kIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQoNCnJlZmVycmFsX1R5cGUgPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIlNjcmVlbmVkLUluIGFuZCBTY3JlZW5lZC1PdXQgUmVmZXJyYWxzIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQpgYGANCg0KDQoNCg0KT3V0bGluZSANCg0KIyBKb2luDQoNCiogSm9pbiB0YWJsZXMgZnJvbSB0d28gZGlmZmVyZW50IHNvdXJjZXMgDQoNCg0KIyBEYXRhIFdyYW5nbGluZyBQb3J0aW9uDQoNCiogR2VuZXJhbCBwdXJwb3NlIGRhdGEgd3JhbmdsaW5nDQogICAgKyBVc2Ugd2hlbiB0aWR5aW5nIGRhdGEgdGFibGVzIA0KKiBVc2Ugb2Ygc3ByZWFkIGFuZCBnYXRoZXIgDQoqIFVzZSBvZiByZWd1bGFyIGV4cHJlc3Npb25zDQoqIFVzZXItZGVmaW5lZCBmdW5jdGlvbnMNCiogTG9vcHMgYW5kL29yIGNvbnRyb2wgZmxvdyANCg0KIyBEYXRhIFZpc3VhbGl6YXRpb24NCg0KKiBWaXN1YWxpemF0aW9uIHdpdGggbGF5ZXJlZCBkYXRhIGZyb20gZGlzdGluY3QgZGF0YSBzdHJ1Y3R1cmVzDQoqIFZpc3VhbGl6YXRpb24gZGlzcGxheWluZyAzIG9yIG1vcmUgdmFyaWFibGVzDQoiKiBBbm90aGVyIHZpc3VhbGl6YXRpb24NCiogQW5vdGhlciB2aXN1YWxpemF0aW9uDQoNCiMgRGF0YSBBbmFseXNpcw0KDQoqIFN0YXRpc3RpY2FsIG1vZGVsaW5nL1N1cGVydmlzZWQgbGVhcm5pbmcNCiogVW5zdXBlcnZpc2VkIGxlYXJuaW5nDQoqIEFuYWx5c2lzIG9mIHRleHQgZGF0YSANCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg==</div>
+<div id="rmd-source-code">LS0tDQphdXRob3JzOiAgRnVua2UgQWxsaXl1IGFuZCBMYXVyeW4gUGF2bGlrDQpkdWUgZGF0ZTogQXByaWwgMzB0aCwgMjAxOQ0KdGl0bGU6ICJSIE5vdGVib29rIg0Kb3V0cHV0OiBodG1sX25vdGVib29rDQotLS0NCg0KDQpgYGB7ciBGcm9udCBNYXR0ZXIsIGluY2x1ZGU9RkFMU0V9DQojIENsZWFuIHVwIGVudmlyb25tZW50DQpybShsaXN0ID0gbHMoKSkNCg0KIyBMb2FkIHBhY2thZ2VzDQpsaWJyYXJ5KHRpZHl2ZXJzZSkNCmxpYnJhcnkocmVhZHIpDQoNCmBgYA0KDQojIEFkZCBEYXRhIFRhYmxlIE9uZQ0KDQpgYGB7cn0NCnJhd19mZWRfZGF0YSA8LSANCiAgcmVhZF9jc3YoImRpZiBzb3VyY2Ugam9pbi5jc3YiKQ0KDQogaGVhZChyYXdfZmVkX2RhdGEpDQoNCmBgYA0KDQojIEFkZCBEYXRhIFRhYmxlIFR3bw0KDQpgYGB7cn0NCk5DQU5EUyA8LSANCiAgcmVhZF9jc3YoIkZpbmRpbmdzIGZyb20gTkNBTkRTIC0gRGF0YSBUYWJsZXMgKHVwZGF0ZWQgd2l0aCBGWSAyMDE1KS5jc3YiKQ0KDQpoZWFkKE5DQU5EUykNCg0KYGBgDQoNCg0KDQojIyBDbGVhbmluZyBGZWRlcmFsIERhdGENCg0KIyMjIE1ha2luZyBhIHRvdGFscyB0YWJsZSANCg0KYGBge3J9DQojIE1ha2UgdG90YWxzIHNlcGVyYXRlIHRhYmxlIGZyb20gZmVkX2RhdGENCmZlZF90b3RhbHMgPC0NCiAgcmF3X2ZlZF9kYXRhICU+JQ0KICBmaWx0ZXIoYE1lYXN1cmUgMmAgPT0gIlRvdGFsIikNCg0KYGBgDQoNCmBgYHtyfQ0KIyBDbGVhbiBmZWRfdG90YWxzDQpmZWRfdG90YWxzIDwtIA0KICBmZWRfdG90YWxzICU+JQ0KICByZW5hbWUoTWVhc3VyZV8yID0gJ01lYXN1cmUgMicsICBNZWFzdXJlXzEgPSAnTWVhc3VyZSAxJykgJT4lDQogIHNwcmVhZChrZXkgPSBGb3JtYXQsIHZhbHVlID0gVmFsdWUpIA0KDQpgYGANCg0KYGBge3J9DQojIFJlbW92ZSBjb2x1bW5zDQpmZWRfdG90YWxzIDwtIA0KICBmZWRfdG90YWxzICU+JQ0KICBzZWxlY3QoLSdYNycsIC0nTWVhc3VyZV8xJywgLSdNZWFzdXJlXzInKQ0KDQpgYGANCg0KYGBge3J9DQojIFJlbmFtZSByZW1haW5pbmcgdmFyaWFibGVzDQpmZWRfdG90YWxzIDwtIA0KICBmZWRfdG90YWxzICU+JQ0KICByZW5hbWUoTnVtX0ZhdGFsaXRpZXMgPSAnTnVtYmVyJywgUmF0ZV9wZXJfMTAwMDAwID0gJ1JhdGUgcGVyIDEwMCwwMDAgQ2hpbGRyZW4nKQ0KDQpgYGANCg0KIyMjIENsZWFuaW5nIG9yaWdpbmFsIHRhYmxlDQoNCmBgYHtyfQ0KIyBSZW5hbWUgYW5kIHNwcmVhZA0KZmVkX2RhdGEgPC0gDQogIHJhd19mZWRfZGF0YSAlPiUNCiAgcmVuYW1lKE1lYXN1cmVfMiA9ICdNZWFzdXJlIDInLCAgTWVhc3VyZV8xID0gJ01lYXN1cmUgMScpICU+JQ0KICBzcHJlYWQoa2V5ID0gTWVhc3VyZV8yLCB2YWx1ZSA9IFZhbHVlKSAlPiUNCiAgc3ByZWFkKGtleSA9IEZvcm1hdCwgdmFsdWUgPSBUb3RhbCkgJT4lDQogIHNlbGVjdCgtYFJhdGUgcGVyIDEwMCwwMDAgQ2hpbGRyZW5gLCAtYFg3YCkNCg0KYGBgDQoNCmBgYHtyfQ0KIyBSZW1vdmUgcm93cyAoTUFZQkUgV1JJVEUgTE9PUCkNCmZlZF9kYXRhIDwtIA0KICBmZWRfZGF0YVstYygyLCA0LCA2LCA4LCAxMCwgMTIsIDE0LCAxNiwgMTgsIDIwLCAyMiwgMjQsIDI2LCAyOCwgMzAsIDMyLCAzNCwgMzYsIDM4LCA0MCwNCiAgICAgICAgICAgICAgNDIsIDQ0LCA0NiwgNDgsIDUwLCA1MiwgNTQsIDU2LCA1OCwgNjAsIDYyLCA2NCwgNjYsIDY4LCA3MCwgNzIsIDc0LCA3NiwgNzgsDQogICAgICAgICAgICAgIDgwLCA4MiwgODQsIDg2LCA4OCwgOTAsIDkyLCA5NCwgOTYsIDk4LCAxMDApLCBdDQoNCmBgYA0KDQpgYGB7cn0NCiMgRmluaXNoIGNsZWFuaW5nDQpmZWRfZGF0YVtpcy5uYShmZWRfZGF0YSldID0gMA0KDQpmZWRfZGF0YSA8LSANCiAgZmVkX2RhdGEgJT4lDQogIHJlbmFtZShOdW1fYWdlbmN5ZmlsZSA9IGBSZXBvcnRlZCBpbiB0aGUgQWdlbmN5IEZpbGVgLCANCiAgICAgICAgIE51bV9jaGlsZGZpbGUgPSBgUmVwb3J0ZWQgaW4gdGhlIENoaWxkIEZpbGVgLCANCiAgICAgICAgIFRvdGFsID0gTnVtYmVyKSAlPiUNCiAgc2VsZWN0KC1gTWVhc3VyZV8xYCkNCiAgDQogIA0KYGBgDQoNCiMjIENsZWFuaW5nIE5DQU5EUyBEYXRhDQoNCmBgYHtyfQ0KDQpOQ0FORFMgPC0NCiAgTkNBTkRTICU+JQ0KICByZW5hbWUoQ2hhcmFjdGVyaXN0aWMgPSBgQ2hhcmFjdGVyaXN0aWMgTGFiZWxgKQ0KDQpgYGANCg0KIyMjIE1ha2UgZmF0YWxpdHlfc3ViX3R5cGUNCg0KYGBge3J9DQpmYXRhbGl0eV9zdWJfdHlwZSA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiQ2hpbGQgRmF0YWxpdGllcyBieSBTdWJtaXNzaW9uIFR5cGUiKSAlPiUNCiAgc2VsZWN0KC0gIk1lYXN1cmUiKSAlPiUNCiAgc3ByZWFkKGtleSA9IENoYXJhY3RlcmlzdGljLCB2YWx1ZSA9IFZhbHVlKSAlPiUNCiAgc3ByZWFkKGtleSA9IEZvcm1hdCwgdmFsdWUgPSBUb3RhbCkgJT4lDQogIHNlbGVjdCgtIFJhdGUpDQoNCmZhdGFsaXR5X3N1Yl90eXBlIDwtIA0KICBmYXRhbGl0eV9zdWJfdHlwZVstYygyLCA0LCA2LCA4LCAxMCwgMTIsIDE0LCAxNiwgMTgsIDIwLCAyMiwgMjQsIDI2LCAyOCwgMzAsIDMyLCAzNCwgMzYsIDM4LCA0MCwNCiAgICAgICAgICAgICAgNDIsIDQ0LCA0NiwgNDgsIDUwLCA1MiwgNTQsIDU2LCA1OCwgNjAsIDYyLCA2NCwgNjYsIDY4LCA3MCwgNzIsIDc0LCA3NiwgNzgsDQogICAgICAgICAgICAgIDgwLCA4MiwgODQsIDg2LCA4OCwgOTAsIDkyLCA5NCwgOTYsIDk4LCAxMDApLCBdDQoNCmZhdGFsaXR5X3N1Yl90eXBlW2lzLm5hKGZhdGFsaXR5X3N1Yl90eXBlKV0gPSAwDQoNCmBgYA0KDQojIyMgTWFrZSBmYXRhbGl0eV90cmVuZA0KDQpgYGB7cn0gDQpmYXRhbGl0eV90cmVuZCA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiQ2hpbGQgRmF0YWxpdGllcywgVHJlbmQiKSAlPiUNCiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpDQoNCmBgYA0KDQojIyMgTWFrZSB2aWN0aW1fYWdlDQoNCmBgYHtyfQ0KdmljdGltX2FnZSA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiQ2hpbGQgVmljdGltcyBieSBBZ2UiKSAlPiUNCiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpDQoNCmBgYA0KDQojIyMgTWFrZSBjYXNlX3R5cGUNCg0KYGBge3J9DQpjYXNlX3R5cGUgPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIkNoaWxkcmVuIGJ5IERpc3Bvc2l0aW9uIikgJT4lDQogIHNwcmVhZChrZXkgPSBNZWFzdXJlLCB2YWx1ZSA9IFZhbHVlKQ0KDQpgYGANCg0KIyMjIE1ha2UgaW52ZXN0aWdhdGlvbg0KDQpgYGB7cn0NCmludmVzdGlnYXRpb24gPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIkNoaWxkcmVuIFdobyBSZWNlaXZlZCBhbiBJbnZlc3RpZ2F0aW9uIG9yIEFsdGVybmF0aXZlIFJlc3BvbnNlLCBUcmVuZCIpICU+JQ0KICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSkNCg0KYGBgDQoNCiMjIyBNYWtlIG1hbF90eXBlIA0KDQpgYGB7cn0NCm1hbF90eXBlIDwtDQogIE5DQU5EUyAlPiUNCiAgZmlsdGVyKFRhYmxlID09ICJNYWx0cmVhdG1lbnQgVHlwZXMgb2YgVmljdGltcyIpICU+JQ0KICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSkNCg0KYGBgDQoNCiMjIyBNYWtlIHBlcnBldHJhdG9yX3RhbGx5DQoNCmBgYHtyfQ0KcGVycGV0cmF0b3JfdGFsbHkgPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIlBlcnBldHJhdG9ycyBieSBSZWxhdGlvbnNoaXAgdG8gdGhlaXIgVmljdGltcyIpICU+JQ0KICBzcHJlYWQoa2V5ID0gTWVhc3VyZSwgdmFsdWUgPSBWYWx1ZSkNCg0KYGBgDQoNCiMjIyBNYWtlIHBlcnBldHJhdG9yX3RvdGFsDQoNCmBgYHtyfQ0KcGVycGV0cmF0b3JfdG90YWwgPC0NCiAgTkNBTkRTICU+JQ0KICBmaWx0ZXIoVGFibGUgPT0gIlBlcnBldHJhdG9ycywgVHJlbmQiKSAlPiUNCiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpDQoNCmBgYA0KDQojIyMgTWFrZSByZWZlcnJhbF90eXBlDQoNCmBgYHtyfQ0KcmVmZXJyYWxfdHlwZSA8LQ0KICBOQ0FORFMgJT4lDQogIGZpbHRlcihUYWJsZSA9PSAiU2NyZWVuZWQtSW4gYW5kIFNjcmVlbmVkLU91dCBSZWZlcnJhbHMiKSAlPiUNCiAgc3ByZWFkKGtleSA9IE1lYXN1cmUsIHZhbHVlID0gVmFsdWUpDQoNCmBgYA0KDQoNCg0KDQpPdXRsaW5lIA0KDQojIEpvaW4NCg0KKiBKb2luIHRhYmxlcyBmcm9tIHR3byBkaWZmZXJlbnQgc291cmNlcyANCg0KDQojIERhdGEgV3JhbmdsaW5nIFBvcnRpb24NCg0KKiBHZW5lcmFsIHB1cnBvc2UgZGF0YSB3cmFuZ2xpbmcNCiAgICArIFVzZSB3aGVuIHRpZHlpbmcgZGF0YSB0YWJsZXMgDQoqIFVzZSBvZiBzcHJlYWQgYW5kIGdhdGhlciANCiogVXNlIG9mIHJlZ3VsYXIgZXhwcmVzc2lvbnMNCiogVXNlci1kZWZpbmVkIGZ1bmN0aW9ucw0KKiBMb29wcyBhbmQvb3IgY29udHJvbCBmbG93IA0KDQojIERhdGEgVmlzdWFsaXphdGlvbg0KDQoqIFZpc3VhbGl6YXRpb24gd2l0aCBsYXllcmVkIGRhdGEgZnJvbSBkaXN0aW5jdCBkYXRhIHN0cnVjdHVyZXMNCiogVmlzdWFsaXphdGlvbiBkaXNwbGF5aW5nIDMgb3IgbW9yZSB2YXJpYWJsZXMNCiIqIEFub3RoZXIgdmlzdWFsaXphdGlvbg0KKiBBbm90aGVyIHZpc3VhbGl6YXRpb24NCg0KIyBEYXRhIEFuYWx5c2lzDQoNCiogU3RhdGlzdGljYWwgbW9kZWxpbmcvU3VwZXJ2aXNlZCBsZWFybmluZw0KKiBVbnN1cGVydmlzZWQgbGVhcm5pbmcNCiogQW5hbHlzaXMgb2YgdGV4dCBkYXRhIA0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0KDQoNCg0K</div>
 
 
 
