@@ -111,6 +111,14 @@ fed_data <-
   
 ```
 
+```{r}
+# Add rates
+fed_data <-
+  full_join(fed_data, fed_totals) %>%
+  select(-Total)
+  
+```
+
 ## Cleaning NCANDS Data
 
 ```{r}
@@ -130,7 +138,7 @@ fatality_sub_type <-
   select(- "Measure") %>%
   spread(key = Characteristic, value = Value) %>%
   spread(key = Format, value = Total) %>%
-  select(- Rate)
+  select(-Rate)
 
 fatality_sub_type <- 
   fatality_sub_type[-c(2, 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40,
