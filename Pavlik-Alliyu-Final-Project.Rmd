@@ -375,6 +375,29 @@ All_data <-
          - `Year`, - `Table`, - `Format.y`)
 
 All_data[is.na(All_data)] = 0
+
+All_data <- 
+  All_data[-c(38, 52, 53), ]
+  
+```
+
+# Data Visualization 
+
+## Graph 1 
+
+```{r}
+Graph_1 <-
+  All_data %>%
+  ggplot() +
+  geom_point(aes(x = Num_fatalities2014, y = Perp2014))
+
+plot(Graph_1)
+
+Graph_1 <-
+  Graph_1 +
+  geom_line(aes(x = fed_totals$Rate_per_100000))
+  
+  
   
 ```
 
@@ -384,23 +407,17 @@ All_data[is.na(All_data)] = 0
 
 
 
-
-
-
-# Outline 
-
-## Join
-
-* Join tables from two different sources    :)
-
+# This is what is left to do:
 
 ## Data Wrangling Portion
-* General purpose data wrangling            :)
-    + Use when tidying data tables 
-* Use of spread and gather               Used spread, NOT gather
-* Use of regular expressions            Trying to look for article on abuse
-* User-defined functions     See if you can find a way to create a function to remove even rows
-* Loops and/or control flow       Use loop in function?
+* Use of spread and gather  
+    + Used spread, NOT gather
+* Use of regular expressions           
+    + Trying to look for article on abuse
+* User-defined functions    
+    + See if you can find a way to create a function to remove even rows
+* Loops and/or control flow     
+    + Use loop in function?
 
 ## Data Visualization
 
