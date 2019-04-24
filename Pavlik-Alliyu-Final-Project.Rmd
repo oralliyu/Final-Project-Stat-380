@@ -337,17 +337,64 @@ referral_type$Total <- referral_type$Screen_in + referral_type$Screen_out
 
 ```
 
+# Join Tables From Different Sources
+
+```{r}
+# Make one big messy table
+All_data <-
+  fed_data %>%
+  full_join( by = "State", case_type) %>%
+  full_join(by = "State", fatality_sub_type) %>%
+  full_join(by = "State", fatality_trend) %>%
+  full_join(by = "State", investigation) %>%
+  full_join(by = "State", mal_type) %>%
+  full_join(by = "State", perpetrator_tally) %>%
+  full_join(by = "State", perpetrator_total) %>%
+  full_join(by = "State", referral_type) %>%
+  full_join(by = "State", victim_age) 
+
+``` 
+
+```{r}
+# Rename variables to keep
+All_data <- 
+  All_data %>%
+  rename(Num_agencyfile2014 = Num_agencyfile.x, Num_childfile2014 = Num_childfile.x, 
+         Num_fatalities2014 = Num_Fatalities, Rate2014 = Rate_per_100000,
+         Substantiated_case = Substantiated, Num_agencyfile2015 = Num_agencyfile.y,
+         Num_childfile2015 = Num_childfile.y, Num_fatalities2015 = Number, 
+         Num_fatalities2011 = `2011.x`, Num_fatalities2012 = `2012.x`, 
+         Num_fatalities2013 = `2013.x`, Invest2011 = `2011.y`, Invest2012 = `2012.y`,
+         Invest2013 = `2013.y`, Invest2014 = `2014.y`, Invest2015 = `2015.y`,
+         Other_abuse = Other.x, Unknown_abuse = Unknown.x, Other_perp = Other.y,
+         Unknown_perp = Unknown.y, Perp2011 = `2011`, Perp2012 = `2012`,
+         Perp2013 = `2013`, Perp2014 = `2014`, Perp2015 = `2015`, Total_screened = Total) %>%
+  select(- `Year.x`, - `Year.y`, - `Table.x`, - `Year.x.x`, - `Table.y`, - `Table.x.x`,
+         - `2014.x`, - `2015.x`, - `Table.y.y`, - `Year.y.y`, - `Table.x.x.x`, - `Format.x`,
+         - `Year.x.x.x`, - `Table.y.y.y`, - `Table.x.x.x.x`, - `Year.y.y.y`, - `Table.y.y.y.y`,
+         - `Year`, - `Table`, - `Format.y`)
+
+All_data[is.na(All_data)] = 0
+  
+```
 
 
 
-Outline 
 
-# Join
+
+
+
+
+
+
+# Outline 
+
+## Join
 
 * Join tables from two different sources 
 
 
-# Data Wrangling Portion
+## Data Wrangling Portion
 * General purpose data wrangling 
     + Use when tidying data tables 
 * Use of spread and gather 
@@ -355,14 +402,14 @@ Outline
 * User-defined functions
 * Loops and/or control flow 
 
-# Data Visualization
+## Data Visualization
 
 * Visualization with layered data from distinct data structures
 * Visualization displaying 3 or more variables
 "* Another visualization
 * Another visualization
 
-# Data Analysis
+## Data Analysis
 
 * Statistical modeling/Supervised learning
 * Unsupervised learning
