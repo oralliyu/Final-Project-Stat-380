@@ -497,7 +497,7 @@ So, I am terrible at coding. Let me know if it is okay if you work on coding the
 ## Data Visualization
 
 Can you check my graphs to make sure they meet the requirements please ?
-* Another visualization
+
 
 ## Data Analysis
 
