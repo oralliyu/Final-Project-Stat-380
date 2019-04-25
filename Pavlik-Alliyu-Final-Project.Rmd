@@ -458,22 +458,21 @@ plot(Graph_3)
 
 # This is what is left to do:
 
-So, I am terrible at coding. Let me know if it is okay if you work on coding the stuff below. I have ideqas for each, I just dont know how to write the code. IF you do a lot of the coding, I can take care of explaing everything, narrarating, and the guidance document. Thanks!
+So, I am terrible at coding. Let me know if it is okay if you work on coding the stuff below that is left. I tried to do my best with what I could. I have ideas for each, I just dont know how to write the code. If you do a lot of the coding, I can take care of explaing everything, narrarating, and the guidance document. Thanks! Also, if you can't figure the rest of the stuff out, or feel like I should do more work, let me know! just shoot me a text when you are done working and I'll go through and narrate and all that jazz. 
 
 ## Data Wrangling Portion
 * Use of spread and gather  
-    + Used spread, NOT gather
+    + Used spread, NOT gather yet
 * Use of regular expressions           
     + Trying to look for article on abuse
 * User-defined functions    
-    + See if you can find a way to create a function to remove even rows
+    + See if you can find a way to create a function to remove even rows, For example lines 94-96 and any others with this same issue
 * Loops and/or control flow     
     + Use loop in function?
 
 ## Data Visualization
 
 Can you check my graphs to make sure they meet the requirements please ?
-* Another visualization
 * Another visualization
 
 ## Data Analysis
