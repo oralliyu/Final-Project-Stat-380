@@ -116,6 +116,12 @@ fed_data <-
 fed_data <-
   full_join(fed_data, fed_totals) %>%
   select(-Total)
+
+fed_data <- 
+  fed_data %>%
+  mutate(State_num = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18,
+                       19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34,
+                       35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50))
   
 ```
 
@@ -372,7 +378,7 @@ All_data <-
   select(- `Year.x`, - `Year.y`, - `Table.x`, - `Year.x.x`, - `Table.y`, - `Table.x.x`,
          - `2014.x`, - `2015.x`, - `Table.y.y`, - `Year.y.y`, - `Table.x.x.x`, - `Format.x`,
          - `Year.x.x.x`, - `Table.y.y.y`, - `Table.x.x.x.x`, - `Year.y.y.y`, - `Table.y.y.y.y`,
-         - `Year`, - `Table`, - `Format.y`)
+         - `Year`, - `Table`, - `Format.y`, - `Rate2014`)
 
 All_data[is.na(All_data)] = 0
 
@@ -393,7 +399,14 @@ All_data <-
 
 ```{r}
 # Layered graph
-  
+Graph_1 <- 
+  ggplot() +
+  geom_line(data = All_data, aes(State_num, Num_fatalities2014, color = "Num_fatalities2014")) +
+  geom_point(data = fed_data, aes(State_num, Rate_per_100000, color = "Rate_per_100000"))
+
+
+
+plot(Graph_1)
   
   
 ```
@@ -418,6 +431,25 @@ plot(Graph_2)
 
 ```
 
+## Graph 3 
+
+```{r}
+# Multiple variables graph
+Graph_3 <- 
+  All_data %>%
+  ggplot() +
+  geom_line(aes(State_num, Invest2011, color = "Invest2011")) +
+  geom_line(aes(State_num, Invest2012, color = "Invest2012")) +
+  geom_line(aes(State_num, Invest2013, color = "Invest2013")) +
+  geom_line(aes(State_num, Invest2014, color = "Invest2014")) +
+  geom_line(aes(State_num, Invest2015, color = "Invest2015")) + 
+  ggtitle("Number of Investigations From 2011 To 2015") +
+  xlab("Number Corresponding To State From Table") +
+  ylab("Number of Investigations")
+
+plot(Graph_3)
+
+```
 
 
 
@@ -440,9 +472,7 @@ So, I am terrible at coding. Let me know if it is okay if you work on coding the
 
 ## Data Visualization
 
-* Visualization with layered data from distinct data structures 
-    + I forget how to do layers :/
-* Visualization displaying 3 or more variables
+Can you check my graphs to make sure they meet the requirements please ?
 * Another visualization
 * Another visualization
 
