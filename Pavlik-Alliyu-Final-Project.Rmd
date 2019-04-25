@@ -451,6 +451,29 @@ plot(Graph_3)
 
 ```
 
+## Graph 4
+
+```{r}
+# Multiple variables graph
+Graph_4 <- 
+  All_data %>%
+  ggplot() +
+  geom_area(aes(State_num, Med_neglect, color = "Med_neglect")) +
+  geom_area(aes(State_num, Neglect, color = "Neglect")) +
+  geom_area(aes(State_num, Other_abuse, color = "Other_abuse")) +
+  geom_area(aes(State_num, Physical_abuse, color = "Physical_abuse")) +
+  geom_area(aes(State_num, Psych_abuse, color = "Psych_abuse")) + 
+  geom_area(aes(State_num, Sexual_abuse, color = "Sexual_abuse")) +
+  geom_area(aes(State_num, Unknown_abuse, color = "Unknown_abuse")) +
+  ggtitle("Types of Abuse") +
+  xlab("Number Corresponding To State From Table") +
+  ylab("Number of Victims That Suffered")
+
+plot(Graph_4)
+
+
+```
+
 
 
 
@@ -464,7 +487,7 @@ So, I am terrible at coding. Let me know if it is okay if you work on coding the
 * Use of spread and gather  
     + Used spread, NOT gather yet
 * Use of regular expressions 
-    + I WILL TAKE CARE OF THIS, JUST DIDNT HAVE TIME TO DO IT TONIGHT
+    + I WILL TAKE CARE OF THIS, JUST DIDNT HAVE TIME TO DO IT TONIGHT (unless you wanna attempt it)
     + Trying to look for article on abuse
 * User-defined functions    
     + See if you can find a way to create a function to remove even rows, For example lines 94-96 and any others with this same issue
@@ -481,7 +504,7 @@ Can you check my graphs to make sure they meet the requirements please ?
 * Statistical modeling/Supervised learning
 * Unsupervised learning
 * Analysis of text data
-    + I WILL ALSO DO THIS PART, JUST RAN OUT OF TIME ONCE AGAIN TONIGHT
+    + I WILL ALSO DO THIS PART, JUST RAN OUT OF TIME ONCE AGAIN TONIGHT (unless you wanna attempt it)
 
 
 
