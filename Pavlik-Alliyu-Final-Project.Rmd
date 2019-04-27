@@ -13,6 +13,7 @@ rm(list = ls())
 # Load packages
 library(tidyverse)
 library(readr)
+library(utils)
 
 ```
 
@@ -476,6 +477,17 @@ plot(Graph_4)
 
 # Article on Child Abuse 
 
+https://www.nspcc.org.uk/what-we-do/childrens-stories-about-abuse/ 
+
+This website provides different childs' abuse stories. I have a collection of 5 abuse stories compiled into a word document
+
+```{r}
+Stories <- 
+  read.delim('Child abuse stories.txt')
+
+View(Stories)
+
+```
 
 
 
@@ -485,8 +497,7 @@ So, I am terrible at coding. Let me know if it is okay if you work on coding the
 
 ## Data Wrangling Portion
 * Use of regular expressions 
-    + I WILL TAKE CARE OF THIS, JUST DIDNT HAVE TIME TO DO IT TONIGHT (unless you wanna attempt it)
-    + Trying to look for article on abuse
+    + Trying to import article on abuse
 * User-defined functions    
     + See if you can find a way to create a function to remove even rows, For example lines 94-96 and any others with this same issue
 * Loops and/or control flow     
@@ -502,7 +513,6 @@ Can you check my graphs to make sure they meet the requirements please ?
 * Statistical modeling/Supervised learning
 * Unsupervised learning
 * Analysis of text data
-    + I WILL ALSO DO THIS PART, JUST RAN OUT OF TIME ONCE AGAIN TONIGHT (unless you wanna attempt it)
 
 
 
