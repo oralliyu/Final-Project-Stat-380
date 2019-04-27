@@ -474,7 +474,7 @@ plot(Graph_4)
 
 ```
 
-
+# Article on Child Abuse 
 
 
 
@@ -484,8 +484,6 @@ plot(Graph_4)
 So, I am terrible at coding. Let me know if it is okay if you work on coding the stuff below that is left. I tried to do my best with what I could. I have ideas for each, I just dont know how to write the code. If you do a lot of the coding, I can take care of explaing everything, narrarating, and the guidance document. Thanks! Also, if you can't figure the rest of the stuff out, or feel like I should do more work, let me know! just shoot me a text when you are done working and I'll go through and narrate and all that jazz. 
 
 ## Data Wrangling Portion
-* Use of spread and gather  
-    + Used spread, NOT gather yet
 * Use of regular expressions 
     + I WILL TAKE CARE OF THIS, JUST DIDNT HAVE TIME TO DO IT TONIGHT (unless you wanna attempt it)
     + Trying to look for article on abuse
