@@ -127,55 +127,64 @@ NCANDS <-
 fatality_sub_type <-
   NCANDS %>%
   filter(Table == "Child Fatalities by Submission Type") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 fatality_trend <-
   NCANDS %>%
   filter(Table == "Child Fatalities, Trend") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 victim_age <-
   NCANDS %>%
   filter(Table == "Child Victims by Age") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 case_type <-
   NCANDS %>%
   filter(Table == "Children by Disposition") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 investigation <-
   NCANDS %>%
   filter(Table == "Children Who Received an Investigation or Alternative Response, Trend") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 mal_type <-
   NCANDS %>%
   filter(Table == "Maltreatment Types of Victims") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 perpetrator_tally <-
   NCANDS %>%
   filter(Table == "Perpetrators by Relationship to their Victims") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 perpetrator_total <-
   NCANDS %>%
   filter(Table == "Perpetrators, Trend") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 
 referral_Type <-
   NCANDS %>%
   filter(Table == "Screened-In and Screened-Out Referrals") %>%
-  spread(key = Measure, value = Value)
+  spread(key = Measure, value = Value) %>%
+  select(-Table)
 
 ```
 
